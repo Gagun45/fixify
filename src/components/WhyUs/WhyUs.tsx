@@ -28,7 +28,7 @@ const features = [
 const WhyUs = () => {
   return (
     <section className={styles.whyUs} id="why-us">
-      <div className={`globalContentWrapper ${styles.wrapper}`}>
+      <div className="globalContentWrapper">
         <h2>Why Choose Fixify</h2>
         <ul className={styles.features}>
           {features.map((feature) => (
