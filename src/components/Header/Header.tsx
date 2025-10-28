@@ -37,7 +37,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile menu button */}
-        <button className={styles.menuButton} onClick={toggleMenu}>
+        <button aria-label="Toggle mobile menu buttonF" className={styles.menuButton} onClick={toggleMenu}>
           <MdMenu />
         </button>
 
