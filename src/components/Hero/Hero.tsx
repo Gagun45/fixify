@@ -17,7 +17,11 @@ const Hero = () => {
         </div>
 
         <div className={styles.imageWrapper}>
-          <img src={heroImg} alt="Technician repairing a device" />
+          <img
+            src={heroImg}
+            loading="lazy"
+            alt="Technician repairing a device"
+          />
         </div>
       </div>
     </section>
