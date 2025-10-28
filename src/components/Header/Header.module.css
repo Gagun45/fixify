@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    border-bottom: 3px solid var(--accent-bg);
 }
 
 .logo {
@@ -77,7 +78,7 @@
     width: 100%;
     background-color: var(--secondary-bg);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    animation: slideDown 0.25s ease-out;
+    animation: fadeIn 0.25s ease-out;
 }
 
 .mobileMenu ul {
@@ -121,14 +122,12 @@
     }
 }
 
-@keyframes slideDown {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-10px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
