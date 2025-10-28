@@ -1,0 +1,17 @@
+.contact {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: start;
+  }
+}
