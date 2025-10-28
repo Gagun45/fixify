@@ -30,6 +30,7 @@
 
 .cta {
     background-color: var(--accent-bg);
+    text-decoration: none;
     color: var(--accent-fg);
     border: none;
     padding: 0.8rem 2rem;

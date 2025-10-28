@@ -11,7 +11,9 @@ const Hero = () => {
             Fixify helps you get your phone, tablet, or laptop repaired quickly
             and professionally. Quality service, guaranteed.
           </p>
-          <button className={styles.cta}>Book a Repair</button>
+          <a href="#contact" className={styles.cta}>
+            Book a Repair
+          </a>
         </div>
 
         <div className={styles.imageWrapper}>

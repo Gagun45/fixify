@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
+import { MdMenu } from "react-icons/md";
 
 interface Link {
   href: string;
@@ -20,7 +21,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`globalContentWrapper ${styles.wrapper}`}>
-        <span className={styles.logo}>Fixify</span>
+        <a href="#" className={styles.logo}>
+          Fixify
+        </a>
 
         {/* Desktop navigation */}
         <nav className={styles.nav} aria-label="Main navigation">
@@ -32,11 +35,10 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <button className={styles.cta}>Book Repair</button>
 
         {/* Mobile menu button */}
         <button className={styles.menuButton} onClick={toggleMenu}>
-          ☰
+          <MdMenu />
         </button>
 
         {/* Mobile menu */}
