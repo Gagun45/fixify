@@ -18,9 +18,12 @@ const Hero = () => {
 
         <div className={styles.imageWrapper}>
           <img
+            width={740}
+            height={494}
             src={heroImg}
             loading="lazy"
             alt="Technician repairing a device"
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
       </div>
