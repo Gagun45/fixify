@@ -41,3 +41,10 @@ section {
   width: 100%;
   padding: 5rem 2rem;
 }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-bg);
+  margin-bottom: 3rem;
+}

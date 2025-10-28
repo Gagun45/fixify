@@ -4,13 +4,6 @@
   text-align: center;
 }
 
-.whyUs h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent-bg);
-  margin-bottom: 3rem;
-}
-
 .features {
   display: grid;
   gap: 2rem;
