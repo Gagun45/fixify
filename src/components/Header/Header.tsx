@@ -19,48 +19,50 @@ const Header = () => {
   const closeMenu = () => setMenuOpen(false);
   return (
     <header className={styles.header}>
-      <span className={styles.logo}>Fixify</span>
+      <div className={`globalContentWrapper ${styles.wrapper}`}>
+        <span className={styles.logo}>Fixify</span>
 
-      {/* Desktop navigation */}
-      <nav className={styles.nav} aria-label="Main navigation">
-        <ul>
-          {LINKS.map((link) => (
-            <li key={link.label}>
-              <a href={link.href}>{link.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <button className={styles.cta}>Book Repair</button>
-
-      {/* Mobile menu button */}
-      <button className={styles.menuButton} onClick={toggleMenu}>
-        ☰
-      </button>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <nav
-          id="mobile-menu"
-          className={styles.mobileMenu}
-          aria-label="Mobile navigation"
-        >
+        {/* Desktop navigation */}
+        <nav className={styles.nav} aria-label="Main navigation">
           <ul>
             {LINKS.map((link) => (
               <li key={link.label}>
-                <a onClick={closeMenu} href={link.href}>
-                  {link.label}
-                </a>
+                <a href={link.href}>{link.label}</a>
               </li>
             ))}
-            <li>
-              <button className={styles.cta} onClick={closeMenu}>
-                Book Repair
-              </button>
-            </li>
           </ul>
         </nav>
-      )}
+        <button className={styles.cta}>Book Repair</button>
+
+        {/* Mobile menu button */}
+        <button className={styles.menuButton} onClick={toggleMenu}>
+          ☰
+        </button>
+
+        {/* Mobile menu */}
+        {menuOpen && (
+          <nav
+            id="mobile-menu"
+            className={styles.mobileMenu}
+            aria-label="Mobile navigation"
+          >
+            <ul>
+              {LINKS.map((link) => (
+                <li key={link.label}>
+                  <a onClick={closeMenu} href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <button className={styles.cta} onClick={closeMenu}>
+                  Book Repair
+                </button>
+              </li>
+            </ul>
+          </nav>
+        )}
+      </div>
     </header>
   );
 };

@@ -33,3 +33,9 @@ html {
 section {
   scroll-margin-top: 64px;
 }
+
+.globalContentWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}

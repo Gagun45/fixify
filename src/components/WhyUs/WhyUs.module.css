@@ -1,7 +1,10 @@
 .whyUs {
-  padding: 5rem 10%;
   background-color: var(--secondary-bg);
   color: var(--fg);
+}
+
+.wrapper {
+  padding: 5rem 10%;
   text-align: center;
 }
 

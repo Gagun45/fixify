@@ -28,16 +28,18 @@ const features = [
 const WhyUs = () => {
   return (
     <section className={styles.whyUs} id="why-us">
-      <h2>Why Choose Fixify</h2>
-      <ul className={styles.features}>
-        {features.map((feature) => (
-          <li key={feature.title} className={styles.card}>
-            <div className={styles.iconWrapper}>{feature.icon}</div>
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
-          </li>
-        ))}
-      </ul>
+      <div className={`globalContentWrapper ${styles.wrapper}`}>
+        <h2>Why Choose Fixify</h2>
+        <ul className={styles.features}>
+          {features.map((feature) => (
+            <li key={feature.title} className={styles.card}>
+              <div className={styles.iconWrapper}>{feature.icon}</div>
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

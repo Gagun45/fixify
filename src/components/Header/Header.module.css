@@ -1,20 +1,25 @@
 .header {
     background-color: var(--bg);
-    height: 64px;
+    height: 96px;
     color: var(--fg);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 50;
 }
 
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
 .logo {
     font-size: 1.5rem;
-    font-weight: 700;
+    letter-spacing: 6px;
+    font-weight: 900;
     color: var(--accent-bg);
     text-decoration: none;
     user-select: none;
@@ -24,13 +29,15 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .nav a {
     text-decoration: none;
     color: var(--fg);
     font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
     transition: color 0.2s ease;
 }
 
@@ -97,6 +104,10 @@
         display: none;
     }
 
+    .header {
+        height: 64px;
+    }
+
     .cta {
         display: none;
     }
@@ -104,6 +115,7 @@
     .menuButton {
         display: block;
     }
+
     .mobileMenu {
         display: block;
     }
