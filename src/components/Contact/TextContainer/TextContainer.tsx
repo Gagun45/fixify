@@ -12,15 +12,15 @@ const TextContainer = () => {
       <ul className={styles.details}>
         <li>
           <FaMapMarkerAlt className={styles.icon} />
-          <span>Waldstraße 37, 93161 Sinzing, Germany</span>
+          <span>123 Repair Street, Techville, Germany</span>
         </li>
         <li>
           <FaPhoneAlt className={styles.icon} />
-          <a href="tel:+4915140164020">+49 151 40164020</a>
+          <a href="tel:+491234567890">+49 123 4567890</a>
         </li>
         <li>
           <FaEnvelope className={styles.icon} />
-          <a href="mailto:denys@qafy.info">denys@qafy.info</a>
+          <a href="mailto:contact@fixify.com">contact@fixify.com</a>
         </li>
       </ul>
     </div>

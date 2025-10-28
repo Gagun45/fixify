@@ -9,6 +9,7 @@ const FormContainer = () => {
         alert(
           "Thanks for your message! 👋\n\nThis is just a demo frontend app — the form doesn`t actually submit data."
         );
+        (e.target as HTMLFormElement).reset();
       }}
     >
       <input type="text" name="name" placeholder="Your Name" required />
