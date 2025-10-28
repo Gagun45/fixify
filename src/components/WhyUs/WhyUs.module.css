@@ -14,9 +14,9 @@
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   justify-items: center;
+  grid-template-columns: 1fr;
 }
 
 .card {
@@ -24,6 +24,7 @@
   border-radius: 12px;
   padding: 2rem 1.5rem;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
@@ -33,12 +34,6 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
-}
-
-.card img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1.2rem;
 }
 
 .card h3 {
@@ -51,6 +46,15 @@
   font-size: 1rem;
   line-height: 1.5;
   color: var(--secondary-fg);
+}
+
+.iconWrapper {
+  margin-bottom: 1.2rem;
+}
+
+.icon {
+  font-size: 50px;
+  color: var(--accent-bg-hover);
 }
 
 /* Responsive */
@@ -67,8 +71,20 @@
     padding: 1.5rem 1rem;
   }
 
-  .card img {
-    width: 50px;
-    height: 50px;
+  .icon {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 640px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop / large screens: 4 columns */
+@media (min-width: 1280px) {
+  .features {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10%;
-    min-height: 90vh;
+    padding: 10rem 10%;
     background-color: var(--bg);
     color: var(--fg);
     gap: 2rem;
@@ -61,7 +60,7 @@
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 3rem 5%;
+        padding: 5rem 5%;
     }
 
     .text h1 {

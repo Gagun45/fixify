@@ -1,5 +1,6 @@
 .header {
     background-color: var(--bg);
+    height: 64px;
     color: var(--fg);
     width: 100%;
     display: flex;
@@ -62,6 +63,7 @@
 }
 
 .mobileMenu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -100,6 +102,9 @@
     }
 
     .menuButton {
+        display: block;
+    }
+    .mobileMenu {
         display: block;
     }
 }

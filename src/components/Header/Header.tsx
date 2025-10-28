@@ -48,7 +48,9 @@ const Header = () => {
           <ul>
             {LINKS.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <a onClick={closeMenu} href={link.href}>
+                  {link.label}
+                </a>
               </li>
             ))}
             <li>
