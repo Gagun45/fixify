@@ -30,14 +30,11 @@ const WhyUs = () => {
   const { ref, visible } = useInView();
   return (
     <section
-      className={styles.whyUs}
+      className={`${styles.whyUs} ${styles.fadeUp} ${
+        visible ? styles.visible : ""
+      }`}
       id="why-us"
       ref={ref}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(30px)",
-        transition: "opacity 0.8s ease, transform 0.8s ease",
-      }}
     >
       <div className="globalContentWrapper">
         <h2>Why Choose Fixify</h2>
@@ -50,8 +47,8 @@ const WhyUs = () => {
                 opacity: visible ? 1 : 0,
                 transform: visible ? "translateY(0)" : "translateY(20px)",
                 transition: `opacity 0.6s ease ${
-                  (idx + 1) * 0.15
-                }s, transform 0.6s ease ${(idx + 1) * 0.15}s`,
+                  idx * 0.15
+                }s, transform 0.6s ease ${idx * 0.15}s`,
               }}
             >
               <div className={styles.iconWrapper}>{feature.icon}</div>
