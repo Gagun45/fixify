@@ -33,14 +33,9 @@ export default function Services() {
   const { ref, visible } = useInView();
   return (
     <section
-      className={styles.services}
+      className={`${styles.services} fadeUp ${visible && "visible"}`}
       id="services"
       ref={ref}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(30px)",
-        transition: "opacity 0.8s ease, transform 0.8s ease",
-      }}
     >
       <div className="globalContentWrapper">
         <h2>Our Services</h2>

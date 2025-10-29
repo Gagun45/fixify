@@ -30,9 +30,7 @@ const WhyUs = () => {
   const { ref, visible } = useInView();
   return (
     <section
-      className={`${styles.whyUs} ${styles.fadeUp} ${
-        visible ? styles.visible : ""
-      }`}
+      className={`${styles.whyUs} fadeUp ${visible && "visible"}`}
       id="why-us"
       ref={ref}
     >
