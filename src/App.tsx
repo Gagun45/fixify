@@ -1,3 +1,4 @@
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -18,6 +19,7 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
+      <BackToTopButton />
     </>
   );
 }
