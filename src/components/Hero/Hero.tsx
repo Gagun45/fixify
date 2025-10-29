@@ -1,9 +1,12 @@
 import styles from "./Hero.module.css";
 import heroImg from "../../assets/hero.jpg";
 import useInView from "../../hooks/useInView";
+import { useState } from "react";
+import BookingModal from "./BookingModal/BookingModal";
 
 const Hero = () => {
   const { ref, visible } = useInView();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section
       className={`${styles.hero} ${visible ? styles.visible : ""}`}
@@ -17,12 +20,15 @@ const Hero = () => {
             Fixify helps you get your phone, tablet, or laptop repaired quickly
             and professionally. Quality service, guaranteed.
           </p>
-          <a href="#contact" className={styles.cta}>
+          <button
+            onClick={() => setIsModalOpen((prev) => !prev)}
+            className={styles.cta}
+          >
             Book a Repair
-          </a>
+          </button>
         </div>
 
-        <div className={styles.imageWrapper}>
+        <figure className={styles.imageWrapper}>
           <img
             width={740}
             height={494}
@@ -31,8 +37,9 @@ const Hero = () => {
             alt="Technician repairing a device"
             style={{ maxWidth: "100%", height: "auto" }}
           />
-        </div>
+        </figure>
       </div>
+      {isModalOpen && <BookingModal onClose={() => setIsModalOpen(false)} />}
     </section>
   );
 };
