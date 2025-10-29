@@ -1,18 +1,22 @@
 :root {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --accent-bg: #0ea5e9;
+  --accent-fg: #ffffff;
+  --accent-bg-hover: #0284c7;
+  --secondary-bg: #e2e8f0;
+  --secondary-fg: #1e293b;
+}
+
+[data-theme="dark"] {
   --bg: #0f172a;
-  /* dark slate-blue background */
   --fg: #f1f5f9;
-  /* off-white / light text */
   --accent-bg: #38bdf8;
-  /* bright cyan-blue for buttons & highlights */
   --accent-fg: #0f172a;
-  /* text color on accent (dark) */
   --accent-bg-hover: #0ea5e9;
-  /* slightly darker cyan for hover */
   --secondary-bg: #1e293b;
-  /* darker panel backgrounds / cards */
   --secondary-fg: #e2e8f0;
-  /* secondary text / subtle elements */
+
 }
 
 * {

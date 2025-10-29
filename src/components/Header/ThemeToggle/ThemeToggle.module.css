@@ -1,0 +1,12 @@
+.toggleBtn {
+    background: none;
+    border: 1px solid var(--fg);
+    color: var(--fg);
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.toggleBtn:hover {
+    background-color: var(--secondary-bg);
+}

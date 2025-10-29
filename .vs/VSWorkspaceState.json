@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Header",
+    "\\src\\components\\Header\\ThemeToggle"
+  ],
+  "SelectedNode": "\\src\\components\\Header\\ThemeToggle\\ThemeToggle.tsx",
+  "PreviewInSolutionExplorer": false
+}

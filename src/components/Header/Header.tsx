@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
 import { MdMenu } from "react-icons/md";
+import ThemeToggle from "./ThemeToggle/ThemeToggle";
 
 interface Link {
   href: string;
@@ -24,6 +25,7 @@ const Header = () => {
         <a href="#" className={styles.logo}>
           Fixify
         </a>
+        <ThemeToggle />
 
         {/* Desktop navigation */}
         <nav className={styles.nav} aria-label="Main navigation">
@@ -37,7 +39,11 @@ const Header = () => {
         </nav>
 
         {/* Mobile menu button */}
-        <button aria-label="Toggle mobile menu buttonF" className={styles.menuButton} onClick={toggleMenu}>
+        <button
+          aria-label="Toggle mobile menu button"
+          className={styles.menuButton}
+          onClick={toggleMenu}
+        >
           <MdMenu />
         </button>
 
