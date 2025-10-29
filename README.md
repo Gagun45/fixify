@@ -44,8 +44,7 @@ npm install
 # start dev server
 npm run dev
 
-Visit http://localhost:5173
- to see the app in action.
+Visit http://localhost:5173 to see the app in action.
 ```
 
 ## 🧩 Demo interactions
@@ -67,5 +66,5 @@ This project is designed to showcase:
 
 ## 🪶 Author
 
-  Oleksandr Selianchyn
+  Oleksandr Selianchyn;
   selyanchyn45@gmail.com
