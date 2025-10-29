@@ -2,9 +2,13 @@
     background: none;
     border: 1px solid var(--fg);
     color: var(--fg);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 0.5rem;
     cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toggleBtn:hover {

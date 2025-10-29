@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./ThemeToggle.module.css";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -13,8 +14,8 @@ const ThemeToggle = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
 
   return (
-    <button onClick={toggleTheme} className={styles.toggleBtn}>
-      {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+    <button aria-label="Switch color mode" onClick={toggleTheme} className={styles.toggleBtn}>
+      {theme === "light" ? <FaMoon /> : <FaSun />}
     </button>
   );
 };

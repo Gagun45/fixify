@@ -22,10 +22,12 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`globalContentWrapper ${styles.wrapper}`}>
-        <a href="#" className={styles.logo}>
-          Fixify
-        </a>
-        <ThemeToggle />
+        <div className={styles.logoWrapper}>
+          <a href="#" className={styles.logo}>
+            Fixify
+          </a>
+          <ThemeToggle />
+        </div>
 
         {/* Desktop navigation */}
         <nav className={styles.nav} aria-label="Main navigation">
