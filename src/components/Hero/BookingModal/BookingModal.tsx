@@ -48,7 +48,11 @@ const BookingModal = ({ onClose }: Props) => {
   return createPortal(
     <div className={styles.overlay}>
       <div className={styles.modal}>
-        <button className={styles.close} onClick={onClose}>
+        <button
+          aria-label="Close modal"
+          className={styles.close}
+          onClick={onClose}
+        >
           <FaX />
         </button>
         {submitted ? (
@@ -60,6 +64,7 @@ const BookingModal = ({ onClose }: Props) => {
             <h2>Book a Repair</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
               <input
+                autoFocus
                 type="text"
                 name="name"
                 placeholder="Your name"
