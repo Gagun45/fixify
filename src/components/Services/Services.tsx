@@ -1,3 +1,4 @@
+import useInView from "../../hooks/useInView";
 import styles from "./Services.module.css";
 import { FaMobileAlt, FaLaptop, FaTabletAlt, FaTools } from "react-icons/fa";
 
@@ -29,13 +30,33 @@ const services = [
 ];
 
 export default function Services() {
+  const { ref, visible } = useInView();
   return (
-    <section className={styles.services} id="services">
+    <section
+      className={styles.services}
+      id="services"
+      ref={ref}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(30px)",
+        transition: "opacity 0.8s ease, transform 0.8s ease",
+      }}
+    >
       <div className="globalContentWrapper">
         <h2>Our Services</h2>
         <ul className={styles.grid}>
-          {services.map((service) => (
-            <li key={service.title} className={styles.card}>
+          {services.map((service, idx) => (
+            <li
+              key={service.title}
+              className={styles.card}
+              style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(15px)",
+                transition: `opacity 0.5s ease ${
+                  idx * 0.15
+                }s, transform 0.5s ease ${idx * 0.15}s`,
+              }}
+            >
               <div className={styles.iconWrapper}>{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

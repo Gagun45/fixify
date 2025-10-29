@@ -17,7 +17,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className={styles.testimonials} id="testimonials">
+    <section
+      className={styles.testimonials}
+      id="testimonials"
+    >
       <div className="globalContentWrapper">
         <h2>What Our Customers Say</h2>
         <ul className={styles.list}>

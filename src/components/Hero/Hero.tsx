@@ -1,9 +1,15 @@
 import styles from "./Hero.module.css";
 import heroImg from "../../assets/hero.jpg";
+import useInView from "../../hooks/useInView";
 
 const Hero = () => {
+  const { ref, visible } = useInView();
   return (
-    <section className={styles.hero} id="hero">
+    <section
+      className={`${styles.hero} ${visible ? styles.visible : ""}`}
+      id="hero"
+      ref={ref}
+    >
       <div className={`globalContentWrapper ${styles.wrapper}`}>
         <div className={styles.text}>
           <h1>Fast & Reliable Device Repair</h1>

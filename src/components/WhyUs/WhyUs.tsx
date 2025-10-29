@@ -1,5 +1,6 @@
 import { FaBolt, FaHeadset, FaUserCheck, FaWallet } from "react-icons/fa6";
 import styles from "./WhyUs.module.css";
+import useInView from "../../hooks/useInView";
 
 const features = [
   {
@@ -26,13 +27,33 @@ const features = [
 ];
 
 const WhyUs = () => {
+  const { ref, visible } = useInView();
   return (
-    <section className={styles.whyUs} id="why-us">
+    <section
+      className={styles.whyUs}
+      id="why-us"
+      ref={ref}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(30px)",
+        transition: "opacity 0.8s ease, transform 0.8s ease",
+      }}
+    >
       <div className="globalContentWrapper">
         <h2>Why Choose Fixify</h2>
         <ul className={styles.features}>
-          {features.map((feature) => (
-            <li key={feature.title} className={styles.card}>
+          {features.map((feature, idx) => (
+            <li
+              key={feature.title}
+              className={styles.card}
+              style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0)" : "translateY(20px)",
+                transition: `opacity 0.6s ease ${
+                  (idx + 1) * 0.15
+                }s, transform 0.6s ease ${(idx + 1) * 0.15}s`,
+              }}
+            >
               <div className={styles.iconWrapper}>{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
