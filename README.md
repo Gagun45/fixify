@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# ⚡ Fixify — Modern Device Repair Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **frontend-only landing page** for a fictional device repair service built with **React + Vite**.  
+Demonstrates clean component structure, modular styling, animations, state management, and theming (light/dark mode).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Beautiful responsive UI** — works perfectly on desktop and mobile
+- **Smooth scroll animations** using Intersection Observer
+- **Sticky header**
+- **Scroll progress bar** and **Back-to-top button**
+- **Booking modal (mock)** with client-side validation
+- **CSS Modules** for scoped styling
+- **Light/Dark theme toggle**
+- Optimized images and **great Lighthouse scores**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Layer          | Technologies                                   |
+| -------------- | ---------------------------------------------- |
+| **Frontend**   | React 19, Vite, TypeScript                     |
+| **Styling**    | CSS Modules                                    |
+| **Icons**      | React Icons                                    |
+| **Animations** | Intersection Observer + CSS transitions        |
+| **Forms**      | Controlled components + client-side validation |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# clone the repo
+git clone https://github.com/yourusername/fixify.git
+
+cd fixify
+
+# install dependencies
+npm install
+
+# start dev server
+npm run dev
+
+Visit http://localhost:5173
+ to see the app in action.
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Demo interactions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Book a Repair: opens a mock booking modal.
+- Contact Form: validates input and shows alert.
+- Navigation: scrolls to appropriate sections
+- Animations: fade-in on scroll for each section
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 Learning Goals
+
+This project is designed to showcase:
+
+- Modern frontend architecture with Vite + React.
+- Managing UI state with controlled forms and modals.
+- Clean separation of styles via CSS Modules.
+- Accessibility & responsive layout design.
+- Handling theme switching manually.
+
+## 🪶 Author
+
+  Oleksandr Selianchyn
+  selyanchyn45@gmail.com

@@ -20,7 +20,7 @@ const TextContainer = () => {
         </li>
         <li>
           <FaEnvelope className={styles.icon} />
-          <a href="mailto:contact@fixify.com">contact@fixify.com</a>
+          <a href="mailto:selyanchyn45@gmail.com">selyanchyn45@gmail.com</a>
         </li>
       </ul>
     </div>
