@@ -3,6 +3,8 @@
 A modern, responsive **frontend-only landing page** for a fictional device repair service built with **React + Vite**.  
 Demonstrates clean component structure, modular styling, animations, state management, and theming (light/dark mode).
 
+App is live: https://fixify-gilt.vercel.app/
+
 ---
 
 ## 🚀 Features
