@@ -34,7 +34,7 @@ Demonstrates clean component structure, modular styling, animations, state manag
 
 ```bash
 # clone the repo
-git clone https://github.com/yourusername/fixify.git
+git clone https://github.com/Gagun45/fixify.git
 
 cd fixify
 
